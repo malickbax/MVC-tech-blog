@@ -1,7 +1,12 @@
+// Importing required express router
 const router = require('express').Router();
-const { Post, User, Comment } = require('../../models');
+const { Post, User, Comment } = require('../../models/Index');
+
+// sequelize
 const sequelize = require('../../config/connection');
 const withAuth = require('../../utils/auth');
+
+// Get router below
 router.get('/', (req, res) => {
     console.log('--------//-------');
     Post.findAll({
@@ -103,6 +108,7 @@ router.put('/:id', withAuth, (req, res) => {
             res.status(500).json(err);
         });
 });
+
 router.delete('/:id', withAuth, (req, res) => {
     Post.destroy({
         where: {

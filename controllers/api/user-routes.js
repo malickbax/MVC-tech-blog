@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { User, Post, Comment } = require('../../models');
+const { User, Post, Comment } = require('../../models/Index');
 router.get('/', (req, res) => {
     User.findAll({
             attributes: { exclude: ['[password'] }
@@ -157,4 +157,6 @@ router.delete('/:id', (req, res) => {
             res.status(500).json(err);
         });
 });
+
+// Exporing user route
 module.exports = router;
