@@ -1,0 +1,26 @@
+{
+  "name": "malickba-tech-blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/malickbax/MVC-tech-blog.git"
+  },
+  "author": "malick ba",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/malickbax/MVC-tech-blog/issues"
+  },
+  "homepage": "https://github.com/malickbax/MVC-tech-blog#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3"
+  }
+}
