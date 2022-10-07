@@ -4,7 +4,7 @@ const sequelize = require('../config/connection');
 
 const { Post, User, Comment } = require('../models/Index');
 const withAuth = require('../utils/auth');
-
+// CREDIT: Worked on this part with the help of coder colleague Brams Lo
 router.get('/', withAuth, (req, res) => {
     Post.findAll({
             where: {

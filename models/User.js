@@ -11,7 +11,6 @@ class User extends Model {
     return bcrypt.compareSync(loginPw, this.password); 
   }
 }
-
 User.init(
   {
     id: {
@@ -44,6 +43,7 @@ User.init(
         newUserData.password = await bcrypt.hash(newUserData.password, 10);
         return newUserData;
       },
+// CREDIT: Worked on this part with the help of coder colleague Brams Lo
       async beforeUpdate(updatedUserData) {
         updatedUserData.password = await bcrypt.hash(
           updatedUserData.password,
