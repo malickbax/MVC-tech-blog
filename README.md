@@ -1,16 +1,18 @@
-# MVC-tech-blog
+# MVC Tech Blog
 ## Description
+A CMS-style blog site similar to a Wordpress site, where developers can publish their blog posts and comment on other developers’ posts as well. App built following the MVC paradigm in its architectural structure with the technologies mentioned below.
 
 ## Technologies Used
 Technologies used to create this website include: 
 - JavaScript
-- Bcrypt package
-- Dotenv package
-- Sequelize package
-- SQL
-- Express Handlebars
 - HTML
 - CSS
+- Handlebars.js as templating language
+- Bcrypt package
+- Dotenv package
+- Sequelize as the ORM
+- Express-session for authentication
+- SQL
 
 ## Deployed URL 
 https://kalafa-tech-blog.herokuapp.com/
